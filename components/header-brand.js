@@ -24,21 +24,12 @@ const HeaderBrand = (props) => {
           </div>
           <div className="header-brand-call-col">
             <span className="header-brand-text">{props.phone_tagline}</span>
-            <span className="header-brand-text1">{props.phone_number}</span>
+            <a href="tel:7037540011" className="header-brand-link">
+              {props.phone_number}
+            </a>
           </div>
         </div>
         <div>
-          <DangerousHTML
-            html={`<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FX4EWMMF8K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FX4EWMMF8K');
-</script>`}
-          ></DangerousHTML>
         </div>
       </div>
       <style jsx>
@@ -116,12 +107,13 @@ const HeaderBrand = (props) => {
             text-align: right;
             font-weight: 700;
           }
-          .header-brand-text1 {
+          .header-brand-link {
             color: rgb(45, 121, 78);
             font-size: 30px;
             font-style: normal;
             text-align: right;
             font-weight: 700;
+            text-decoration: none;
           }
           @media (max-width: 991px) {
             .header-brand-header-brand-row {
@@ -162,7 +154,7 @@ const HeaderBrand = (props) => {
             .header-brand-text {
               font-size: 16px;
             }
-            .header-brand-text1 {
+            .header-brand-link {
               font-size: 20px;
             }
           }
