@@ -22,7 +22,7 @@ const Footer = (props) => {
               <span>Gainesville, VA 20155</span>
               <br></br>
             </span>
-            <button className="footer-button button">
+            <a href="tel:7037540011" className="footer-link button">
               <span className="footer-text06 fa-phone-square fa">
                 {props.Text}
               </span>
@@ -30,7 +30,7 @@ const Footer = (props) => {
                 <span>703-754-0011</span>
                 <br></br>
               </span>
-            </button>
+            </a>
           </div>
           <div className="footer-container2">
             <span className="footer-text10">{props.text1}</span>
@@ -91,7 +91,7 @@ const Footer = (props) => {
           .footer-text01 {
             font-size: 30px;
           }
-          .footer-button {
+          .footer-link {
             width: 100%;
             font-size: 20px;
             align-self: flex-start;
@@ -101,6 +101,7 @@ const Footer = (props) => {
             padding-left: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-unit);
             padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
             background-color: var(--dl-color-success-300);
           }
           .footer-text06 {
