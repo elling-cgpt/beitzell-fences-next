@@ -7,6 +7,11 @@ const HeaderBrand = (props) => {
   return (
     <>
       <div className="header-brand-header-brand-row">
+        <div>
+          <DangerousHTML
+            html={`<meta name="googlebot" content="noindex">`}
+          ></DangerousHTML>
+        </div>
         <div className="header-brand-header-brand-inner">
           <div className="header-brand-logo-col">
             <div className="header-brand-container">
@@ -30,6 +35,17 @@ const HeaderBrand = (props) => {
           </div>
         </div>
         <div>
+          <DangerousHTML
+            html={`<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FX4EWMMF8K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FX4EWMMF8K');
+</script>`}
+          ></DangerousHTML>
         </div>
       </div>
       <style jsx>
