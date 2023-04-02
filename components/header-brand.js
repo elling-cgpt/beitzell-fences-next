@@ -42,7 +42,9 @@ const HeaderBrand = (props) => {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+ 
+  gtag('config', 'AW-954421651');
+  
   gtag('config', 'G-FX4EWMMF8K');
 </script>`}
           ></DangerousHTML>
