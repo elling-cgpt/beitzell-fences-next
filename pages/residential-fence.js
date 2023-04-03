@@ -31,7 +31,7 @@ const ResidentialFence = (props) => {
         </Head>
         <div className="residential-fence-page-container">
           <div className="residential-fence-header-container">
-            <HeaderBrand phone_number="703-754-0011"></HeaderBrand>
+            <HeaderBrand phone_number="703-774-9110"></HeaderBrand>
           </div>
           <HeroForm
             inputclient_id_placeholder="58152ae5-3092-48a4-ae8d-1c830e0b904c"
