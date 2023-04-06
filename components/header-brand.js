@@ -29,7 +29,7 @@ const HeaderBrand = (props) => {
           </div>
           <div className="header-brand-call-col">
             <span className="header-brand-text">{props.phone_tagline}</span>
-            <a href="tel:7037540011" className="header-brand-link">
+            <a href="tel:7037749110" className="header-brand-link">
               {props.phone_number}
             </a>
           </div>
